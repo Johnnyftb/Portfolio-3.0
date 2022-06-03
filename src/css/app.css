@@ -1,0 +1,78 @@
+@keyframes fade-in {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+
+.app {
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+/* Pages */
+.home .content, 
+.about .content, 
+.services .content {
+    animation-name: fade-in;
+    animation-duration: 1s;
+    height: 70vh;
+}
+
+.projects .content {
+    min-height: 70vh;
+    animation-name: fade-in;
+    animation-duration: 1s;
+}
+
+.about .content img {
+    height: 40vh;
+}
+
+.services .content h1 {
+    transition: font-size 0.5s;
+    cursor: pointer;
+}
+
+.services .service-content div {
+    animation-name: fade-in;
+    animation-duration: 1s; 
+}
+
+.services .content .service-content img {
+    height: 45vh;
+}
+
+#express-icon,
+#mongo-icon {
+    height: 1em;
+}
+
+.projects .overlay {
+    position: absolute;
+    z-index: 3;
+    background: rgba(60,60,60, 0.8);
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+    cursor: pointer;
+}
+
+.projects .overlay:hover {
+    opacity: 1;
+}
+
+
+.projects .image-container {
+    position: relative;
+    background: transparent;
+    z-index: 2;
+}
+
+/* Components */
+.navbar {
+    height: 20vh;
+}
+
+.footer {
+    height: 10vh;
+    position: relative;
+    bottom: 0;
+}

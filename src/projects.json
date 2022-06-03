@@ -1,0 +1,22 @@
+[
+    {
+        "project_name": "The Headless Society",
+        "image_path": "/images/projects/headless-society.svg",
+        "description": "Description",
+        "work": "Project Website",
+        "links": {
+            "website": "https://www.headlesssociety.io",
+            "source_code": "https://github.com/Johnnyftb/Headless-Society-Website"
+        }
+    },
+    {
+        "project_name": "Rowdy Royals",
+        "image_path": "/images/projects/rowdy-royals.svg",
+        "description": "Description",
+        "work": "Project Website",
+        "links": {
+            "website": "https://www.rowdyroyalsnft.com",
+            "source_code": "https://github.com/Johnnyftb/Rowdy-Royals"
+        }
+    }
+]
