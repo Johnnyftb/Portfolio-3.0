@@ -7,6 +7,7 @@ const Contact = ({windowWidth}) => {
             <div className="content container text-dark text-poppins px-5 py-3 mb-5 mb-lg-0 h-100">
                 <h1 className="text-quicksand text-center mb-4">Get in Touch</h1>
                 <form className={windowWidth > 992 && 'w-50 mx-auto'} name="contact" method="POST" data-netlify="true">
+                <input type="hidden" name="form-name" value="contact" />
                 <div className="mb-3">
                     <label htmlFor="name" className="col-form-label fw-bold">Name:</label>
                     <input name="Name" type="text" className="form-control" id="name" />
