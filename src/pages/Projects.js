@@ -2,7 +2,7 @@ import React from 'react';
 import { Navbar, Footer } from "./components/index";
 import projectData from "../projects.json";
 
-const Projects = () => {
+const Projects = ({windowWidth}) => {
     
     const [projectModalView, setProjectModalView] = React.useState(false);
     const [project, setProject] = React.useState({})
@@ -20,22 +20,22 @@ const Projects = () => {
         <div className="projects">
             {project && projectModalView && (
                <div className="project-modal">
-                    <div className="text-dark text-poppins d-flex justify-content-center align-items-center w-100 h-100">
-                        <div className="modal-container bg-light w-50 shadow rounded p-3">
-                            <div className="exit-container d-flex justify-content-end w-100">
+                    <div className="text-dark text-poppins d-flex flex-lg-row flex-column justify-content-center align-items-center w-100 h-100">
+                        <div className={`"modal-container bg-light ${windowWidth > 992 ? 'w-50' : 'w-75'} shadow rounded p-3 m-5"`}>
+                            <div className="exit-container d-flex justify-content-end w-100 mb-3">
                                 <i className="fa fa-x fa-2x" onClick={exitModal}></i>
                             </div>
-                            <div className="d-flex justify-content-between align-items-start">
-                                <img src={project.image_path} className="w-50 rounded"/>
-                                <div className='w-50 p-3 align-top'>
-                                    <h2 className="text-quicksand">{project.project_name}</h2>
-                                    <p className='lead'>{project.description}</p>
-                                    <div className="d-flex align-items-center mt-5">
+                            <div className="d-flex flex-lg-row flex-column justify-content-lg-between justify-content-start  align-items-lg-start align-items-center">
+                                <img src={project.image_path} className={`${windowWidth > 992 & 'w-50'} rounded`}/>
+                                <div className={`${windowWidth > 992 && 'w-50'} p-3 align-top`}>
+                                    <h2 className="text-quicksand text-lg-start text-center">{project.project_name}</h2>
+                                    <p className={windowWidth > 992 & 'lead'}>{project.description}</p>
+                                    <div className="d-flex align-items-center justify-content-lg-start justify-content-center mt-5">
                                         <a href={project.links.website} className="text-decoration-none">
-                                            <i className="fa fa-globe fa-2x me-4 text-secondary"></i>
+                                            <i className="fa fa-globe fa-2x me-lg-4 mx-2 mx-lg-0 text-secondary"></i>
                                         </a>
                                         <a href={project.links.source_code} className="text-decoration-none">
-                                            <i className="fa fa-code fa-2x me-4 text-secondary"></i>
+                                            <i className="fa fa-code fa-2x me-lg-4 mx-2 mx-lg-0 text-secondary"></i>
                                         </a>
                                     </div>
                                 </div>
@@ -44,10 +44,10 @@ const Projects = () => {
                     </div>
                 </div> 
             )}
-            <Navbar selected={"Projects"} />
+            <Navbar selected={"Projects"} windowWidth={windowWidth} />
             <div className="content px-5 text-light text-quicksand row align-items-start justify-content-center">
                 {projectData.map((item, index) => (
-                    <div className="col-3 m-4">
+                    <div className="col-lg-3 col-12 m-4">
                         <div className="image-container shadow">
                             <div className="overlay w-100 h-100 d-flex flex-column align-items-center justify-content-center rounded" onClick={enterModal} id={index}>
                                 <h2 index={index}>{item.project_name}</h2>

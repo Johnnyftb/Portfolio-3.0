@@ -4,6 +4,14 @@
     --purple-: #8a2be2;
 }
 
+.absolute {
+    position: absolute;
+}
+
+.fixed {
+    position: fixed;
+    top: 0;
+}
 /* Fonts */
 .text-quicksand {
     font-family: 'Quicksand', sans-serif;

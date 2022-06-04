@@ -6,6 +6,7 @@
 .app {
     min-height: 100vh;
     overflow: hidden;
+    position: relative;
 }
 
 /* Pages */
@@ -100,8 +101,38 @@
     height: 7vh;
 }
 
+.navbar i {
+    cursor: pointer;
+}
+
 .footer {
     height: 10vh;
     position: relative;
     bottom: 0;
+}
+
+.sidebar {
+    top: 0;
+    transition: left 0.5s ease-in;
+    height: 100vh;
+    z-index: 10;
+    width: 100vw;
+}
+
+.sidebar .exit-container {
+    height: 20vh;
+}
+
+@media (max-width: 992px) {
+    .home .content, 
+    .about .content, 
+    .services .content,
+    .contact .content {
+        height: auto;
+        min-height: 70vh; 
+    }
+
+    .about .content img {
+        height: auto
+    }
 }

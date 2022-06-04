@@ -17,7 +17,7 @@ const Footer = () => {
 
     return (
         <div className="footer">
-            <div className="px-5 pb-5 text-quicksand text-dark d-flex align-items-center w-100">
+            <div className="px-5 pb-5 text-quicksand text-dark d-flex justify-content-center justify-content-lg-start align-items-center w-100">
                 {socialLinks.map(item => (
                     <a href={item.link} className="text-decoration-none text-dark">
                         <i className={`fab fa-${item.icon} fa-2x mx-3`}></i>
