@@ -21,13 +21,13 @@ const Projects = ({windowWidth}) => {
             {project && projectModalView && (
                <div className="project-modal">
                     <div className="text-dark text-poppins d-flex flex-lg-row flex-column justify-content-center align-items-center w-100 h-100">
-                        <div className={`"modal-container bg-light ${windowWidth > 992 ? 'w-50' : 'w-75'} shadow rounded p-3 m-5"`}>
+                        <div className={`modal-container bg-light ${windowWidth > 992 ? 'w-50' : 'w-75'} shadow rounded p-3 m-5 h-auto`}>
                             <div className="exit-container d-flex justify-content-end w-100 mb-3">
                                 <i className="fa fa-x fa-2x" onClick={exitModal}></i>
                             </div>
-                            <div className="d-flex flex-lg-row flex-column justify-content-lg-between justify-content-start  align-items-lg-start align-items-center">
-                                <img src={project.image_path} className={`${windowWidth > 992 & 'w-50'} rounded`}/>
-                                <div className={`${windowWidth > 992 && 'w-50'} p-3 align-top`}>
+                            <div className="d-flex flex-lg-row flex-column justify-content-lg-between justify-content-start align-items-lg-start align-items-center">
+                                <img src={project.image_path} className={`${windowWidth > 992 ? 'w-50' : 'w-100'} rounded`}/>
+                                <div className={`${windowWidth > 992 & 'w-50'} p-3 align-top`}>
                                     <h2 className="text-quicksand text-lg-start text-center">{project.project_name}</h2>
                                     <p className={windowWidth > 992 & 'lead'}>{project.description}</p>
                                     <div className="d-flex align-items-center justify-content-lg-start justify-content-center mt-5">
@@ -50,8 +50,8 @@ const Projects = ({windowWidth}) => {
                     <div className="col-lg-3 col-12 m-4">
                         <div className="image-container shadow">
                             <div className="overlay w-100 h-100 d-flex flex-column align-items-center justify-content-center rounded" onClick={enterModal} id={index}>
-                                <h2 index={index}>{item.project_name}</h2>
-                                <p className='text-poppins'>{item.work}</p>
+                                <h2 className="text-center" index={index}>{item.project_name}</h2>
+                                <p className='text-poppins text-center'>{item.work}</p>
                             </div>
                             <img src={item.image_path} alt="" className="rounded" />
                         </div>
