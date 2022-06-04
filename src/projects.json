@@ -2,7 +2,7 @@
     {
         "project_name": "The Headless Society",
         "image_path": "/images/projects/headless-society.svg",
-        "description": "Description",
+        "description": "I built the project website for the Headless Society, an NFT project focusing on bridging mental health and web3.",
         "work": "Project Website",
         "links": {
             "website": "https://www.headlesssociety.io",
@@ -12,7 +12,7 @@
     {
         "project_name": "Rowdy Royals",
         "image_path": "/images/projects/rowdy-royals.svg",
-        "description": "Description",
+        "description": "I built the project website for Rowdy Royals, an NFT project with an upcoming play-2-earn metaverse game.",
         "work": "Project Website",
         "links": {
             "website": "https://www.rowdyroyalsnft.com",

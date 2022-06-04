@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import './css/utilities.css';
 import './css/app.css';
 
-import { Home, About, Services, Projects } from "./pages/index";
+import { Home, About, Services, Projects, Contact } from "./pages/index";
 
 const App = () => {
     return (
@@ -22,6 +22,9 @@ const App = () => {
                     </Route>
                     <Route exact path="/projects">
                         <Projects />
+                    </Route>
+                    <Route exact path="/contact">
+                        <Contact />
                     </Route>
                 </Switch>
             </div>

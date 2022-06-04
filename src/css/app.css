@@ -11,7 +11,8 @@
 /* Pages */
 .home .content, 
 .about .content, 
-.services .content {
+.services .content,
+.contact .content {
     animation-name: fade-in;
     animation-duration: 1s;
     height: 70vh;
@@ -46,6 +47,25 @@
     height: 1em;
 }
 
+.projects {
+    position: relative;
+    z-index: 0;
+}
+
+.project-modal {
+    position: absolute;
+    z-index: 5;
+    height: 100vh;
+    width: 100vw;
+    background: rgba(60,60,60, 0.9);
+    animation-name: fade-in;
+    animation-duration: 0.8s;
+}
+
+.project-modal i {
+    cursor: pointer;
+}
+
 .projects .overlay {
     position: absolute;
     z-index: 3;
@@ -66,9 +86,18 @@
     z-index: 2;
 }
 
+#message {
+    height: 15vh;
+    resize: none;
+}
+
 /* Components */
 .navbar {
     height: 20vh;
+}
+
+.navbar img {
+    height: 7vh;
 }
 
 .footer {

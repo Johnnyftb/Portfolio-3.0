@@ -23,7 +23,7 @@ const Navbar = ({selected}) => {
         <nav className="navbar">
             <div className="px-5 text-dark text-quicksand d-flex justify-content-between align-items-center w-100 h-100">
                 <a href="/" className="nav-link text-dark">
-                    <h1 className="display-5 mb-0">John Pioc</h1>
+                    <img src="/images/icons/j.png" alt="" />
                 </a>
                 <ul className="navbar-nav d-flex flex-row align-items-center">
                     {navLinks.map(item => (

@@ -18,7 +18,7 @@ const Services = () => {
                     <h1 className={`text-quicksand ${selectedService === "Backend" ? "text-purple display-4" : "text-dark display-5"}`} onClick={handleClick}>Backend</h1>
                     <h1 className={`text-quicksand ${selectedService === "Blockchain" ? "text-purple display-4" : "text-dark display-5"}`} onClick={handleClick}>Blockchain</h1>
                 </div>
-                <div className="service-content w-50 text-center">
+                <div className="service-content w-50 text-center pb-5">
                     {selectedService === "" && (<img src="/images/2.png"/>)}
                     {selectedService === "Frontend" && (
                     <div>
