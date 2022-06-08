@@ -113,7 +113,7 @@
 
 .sidebar {
     top: 0;
-    transition: left 0.5s ease-in;
+    transition: left 0.3s ease-in;
     height: 100vh;
     z-index: 10;
     width: 100vw;

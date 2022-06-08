@@ -1,7 +1,7 @@
 const socialLinks = [
     {
         icon: "twitter",
-        link: "https://twitter.com/JohnnyPioc"
+        link: "https://twitter.com/johnnypdev"
     },
     {
         icon: "github",
@@ -9,7 +9,7 @@ const socialLinks = [
     },
     {
         icon: "linkedin",
-        link: "https://www.linkedin.com/in/john-pioc-4b4705s227/"
+        link: "https://www.linkedin.com/in/john-pioc/"
     }
 ];
 
