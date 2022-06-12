@@ -30,13 +30,21 @@ const Projects = ({windowWidth}) => {
                                 <div className={`${windowWidth > 992 & 'w-50'} p-3 align-top`}>
                                     <h2 className="text-quicksand text-lg-start text-center">{project.project_name}</h2>
                                     <p className={windowWidth > 992 & 'lead'}>{project.description}</p>
-                                    <div className="d-flex align-items-center justify-content-lg-start justify-content-center mt-5">
-                                        <a href={project.links.website} className="text-decoration-none">
-                                            <i className="fa fa-globe fa-2x me-lg-4 mx-2 mx-lg-0 text-secondary"></i>
-                                        </a>
-                                        <a href={project.links.source_code} className="text-decoration-none">
-                                            <i className="fa fa-code fa-2x me-lg-4 mx-2 mx-lg-0 text-secondary"></i>
-                                        </a>
+                                    <div className="d-flex flex-column align-items-center justify-content-lg-start justify-content-center mt-5">
+                                        {project.links.website && 
+                                            (
+                                                <a href={project.links.website} className="text-decoration-none">
+                                                    <button className="btn bg-purple text-light px-4 py-2 text-quicksand rounded-pill mb-3">View Website <i className="fa fa-arrow-right fa-lg ms-2"></i></button>
+                                                </a>
+                                            )
+                                        }
+                                        {project.links.source_code && 
+                                            (
+                                                <a href={project.links.source_code} className="text-decoration-none">
+                                                    <button className="btn bg-dark text-light px-4 py-2 text-quicksand rounded-pill">View Project on GitHub <i className="fa fa-arrow-right fa-lg ms-2"></i></button>
+                                                </a>
+                                            )
+                                        }
                                     </div>
                                 </div>
                             </div>

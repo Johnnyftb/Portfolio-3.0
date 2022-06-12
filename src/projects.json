@@ -1,5 +1,14 @@
 [
     {
+        "project_name": "NFT Minting Dapp",
+        "image_path": "/images/projects/nft-minting-dapp.svg",
+        "description": "I built an NFT minting dapp where users can mint NFTs from the Johnny collection on the Rinkeby Testnet Ethereum Blockchain.",
+        "work": "Practice Project",
+        "links": {
+            "source_code": "https://github.com/Johnnyftb/NFT-Minting-Dapp-2.0"
+        }
+    },
+    {
         "project_name": "The Headless Society",
         "image_path": "/images/projects/headless-society.svg",
         "description": "I built the project website for the Headless Society, an NFT project focusing on bridging mental health and web3.",
