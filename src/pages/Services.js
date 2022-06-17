@@ -27,9 +27,13 @@ const Services = ({windowWidth}) => {
                             <img src="/images/frontend.png" />
                             <h2 className="text-quicksand">Frontend Development</h2>
                             <p className="lead text-secondary mb-4">I'm all about simple, clean and responsive design. I love bringing ideas to life beautifully through a screen.</p>
-                            <p className="text-dark fw-bold mb-3"><i className="fab fa-react fa-xl"></i> React</p>
-                            <p className="text-dark fw-bold mb-3"><i className="fab fa-bootstrap fa-xl"></i> Bootstrap</p>
-                            <p className="text-dark fw-bold mb-3"><i className="fab fa-figma fa-xl"></i> Figma</p>
+                            <div className="row w-100 justify-content-center">
+                                <p className="col-4 text-dark fw-bold mb-3"><i className="fab fa-react fa-xl"></i> React</p>
+                                <p className="col-4 text-dark fw-bold mb-3"><i className="fab fa-bootstrap fa-xl"></i> Bootstrap</p>
+                                <p className="col-4 text-dark fw-bold mb-3"><i className="fab fa-figma fa-xl"></i> Figma</p>
+                                <p className="col-4 text-dark fw-bold mb-3"><img src="/images/icons/axios-icon.svg" alt="" id="axios-icon"/> Figma</p>
+                            </div>
+                            
                         </div>
                         )}
                         {selectedService === "Backend" && (

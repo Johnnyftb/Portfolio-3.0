@@ -9,6 +9,15 @@
         }
     },
     {
+        "project_name": "Apple Website Clone",
+        "image_path": "/images/projects/apple-website-clone.svg",
+        "description": "I built an exact clone of the Apple website homepage from scratch through technologies such as React.js, Bootstrap and vanilla CSS.",
+        "work": "Practice Project",
+        "links": {
+            "source_code": "https://github.com/Johnnyftb/Apple-Website-Clone"
+        }
+    },
+    {
         "project_name": "The Headless Society",
         "image_path": "/images/projects/headless-society.svg",
         "description": "I built the project website for the Headless Society, an NFT project focusing on bridging mental health and web3.",
