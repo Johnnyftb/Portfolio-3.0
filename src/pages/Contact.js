@@ -1,6 +1,19 @@
+import React from 'react';
 import { Navbar, Footer } from "./components/index";
 
 const Contact = ({windowWidth}) => {
+
+    const [submitted, setSubmitted] = React.useState(false);
+
+    React.useState(() => {
+        setSubmitted(false);
+    }, [])
+
+    const handleClick = (e) => {
+        e.preventDefault();
+        setSubmitted(true);
+    }
+
     return (
         <div className="contact">
             <Navbar selected={'Contact'} windowWidth={windowWidth}/>
@@ -24,8 +37,9 @@ const Contact = ({windowWidth}) => {
                     <label  htmlFor="message" className="col-form-label fw-bold">Message:</label>
                     <textarea name="Message" type="text" className="form-control" id="message"></textarea>
                 </div>
+                {submitted && <p className="text-success text-center fw-bold">Form has been submitted</p>}
                 <div className="button-container d-flex justify-content-center">
-                    <button id="submit-btn" type="submit" className="btn btn-lg bg-purple text-quicksand px-3 py-2 text-light pointer-events-cursor shadow">Submit</button>
+                    <button id="submit-btn" type="submit" className="btn btn-lg bg-purple text-quicksand px-3 py-2 text-light pointer-events-cursor shadow" onClick={handleClick}>Submit</button>
                 </div>
                 </form>
             </div>

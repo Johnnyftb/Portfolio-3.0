@@ -19,7 +19,7 @@ const Projects = ({windowWidth}) => {
     return (
         <div className="projects">
             {project && projectModalView && (
-               <div className="project-modal">
+               <div className={`project-modal ${projectModalView && 'fixed'}`}>
                     <div className="text-dark text-poppins d-flex flex-lg-row flex-column justify-content-center align-items-center w-100 h-100">
                         <div className={`modal-container bg-light ${windowWidth > 992 ? 'w-50' : 'w-75'} shadow rounded p-3 m-5 h-auto`}>
                             <div className="exit-container d-flex justify-content-end w-100 mb-3">

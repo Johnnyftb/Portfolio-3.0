@@ -12,6 +12,11 @@
     position: fixed;
     top: 0;
 }
+
+.sticky {
+    position: sticky;
+}
+
 /* Fonts */
 .text-quicksand {
     font-family: 'Quicksand', sans-serif;
