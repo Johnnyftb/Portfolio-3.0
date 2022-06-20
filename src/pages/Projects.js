@@ -1,5 +1,5 @@
 import React from 'react';
-import { Navbar, Footer } from "./components/index";
+import { Navbar, Footer, Featured } from "./components/index";
 import projectData from "../projects.json";
 
 const Projects = ({windowWidth}) => {
@@ -55,13 +55,14 @@ const Projects = ({windowWidth}) => {
             <Navbar selected={"Projects"} windowWidth={windowWidth} />
             <div className="content px-5 text-light text-quicksand row align-items-start justify-content-center">
                 {projectData.map((item, index) => (
-                    <div className="col-lg-3 col-12 m-4">
+                    <div className="project col-lg-3 col-12 m-4">
                         <div className="image-container shadow">
                             <div className="overlay w-100 h-100 d-flex flex-column align-items-center justify-content-center rounded" onClick={enterModal} id={index}>
                                 <h2 className="text-center" index={index}>{item.project_name}</h2>
                                 <p className='text-poppins text-center'>{item.work}</p>
                             </div>
                             <img src={item.image_path} alt="" className="rounded" />
+                            {item.featured && <Featured />}
                         </div>
                     </div>
                 ))}

@@ -54,6 +54,17 @@
     z-index: 0;
 }
 
+.project {
+    position: relative;
+    z-index: 0
+}
+
+.featured {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+}
+
 .project-modal {
     z-index: 5;
     height: 100vh;

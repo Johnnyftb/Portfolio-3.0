@@ -6,7 +6,8 @@
         "work": "Practice Project",
         "links": {
             "source_code": "https://github.com/Johnnyftb/NFT-Minting-Dapp-2.0"
-        }
+        },
+        "featured": true
     },
     {
         "project_name": "The Headless Society",
@@ -16,7 +17,8 @@
         "links": {
             "website": "https://www.headlesssociety.io",
             "source_code": "https://github.com/Johnnyftb/Headless-Society-Website"
-        }
+        },
+        "featured": false
     },
     {
         "project_name": "Apple Website Clone",
@@ -25,7 +27,8 @@
         "work": "Practice Project",
         "links": {
             "source_code": "https://github.com/Johnnyftb/Apple-Website-Clone"
-        }
+        },
+        "featured": false
     },
     {
         "project_name": "Rowdy Royals",
@@ -35,6 +38,7 @@
         "links": {
             "website": "https://www.rowdyroyalsnft.com",
             "source_code": "https://github.com/Johnnyftb/Rowdy-Royals"
-        }
+        },
+        "featured": false
     }
 ]
