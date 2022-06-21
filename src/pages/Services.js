@@ -31,7 +31,6 @@ const Services = ({windowWidth}) => {
                                 <p className="col-4 text-dark fw-bold mb-3"><i className="fab fa-react fa-xl"></i> React</p>
                                 <p className="col-4 text-dark fw-bold mb-3"><i className="fab fa-bootstrap fa-xl"></i> Bootstrap</p>
                                 <p className="col-4 text-dark fw-bold mb-3"><i className="fab fa-figma fa-xl"></i> Figma</p>
-                                <p className="col-4 text-dark fw-bold mb-3"><img src="/images/icons/axios-icon.svg" alt="" id="axios-icon"/> Figma</p>
                             </div>
                             
                         </div>
