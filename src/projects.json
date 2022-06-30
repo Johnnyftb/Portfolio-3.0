@@ -10,6 +10,16 @@
         "featured": true
     },
     {
+        "project_name": "MERN Task Manager App",
+        "image_path": "/images/projects/task-manager-app.svg",
+        "description": "I built a simple CRUD task manager app using the MERN stack. In this app, users are able to view their tasks, create new tasks, update and delete them.",
+        "work": "Practice Project",
+        "links": {
+            "source_code": "https://github.com/Johnnyftb/MERN-Task-Manager-App"
+        },
+        "featured": true
+    },
+    {
         "project_name": "The Headless Society",
         "image_path": "/images/projects/headless-society.svg",
         "description": "I built the project website for the Headless Society, an NFT project focusing on bridging mental health and web3.",
