@@ -1,9 +1,5 @@
 const socialLinks = [
     {
-        icon: "twitter",
-        link: "https://twitter.com/johnnypdev"
-    },
-    {
         icon: "github",
         link: "https://github.com/Johnnyftb"
     },
