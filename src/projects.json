@@ -1,5 +1,15 @@
 [
     {
+        "project_name": "Abstract Realm",
+        "image_path": "/images/projects/abstract-realm.svg",
+        "description": "I was the lead developer for Abstract Realm. Working closely with the team, I built the project website, minting dApp, and provided advice for the project in terms of development.",
+        "work": "Lead Developer",
+        "links": {
+            "website": "https://abstractrealm.io/"
+        },
+        "featured": true
+    },
+    {
         "project_name": "NFT Minting Dapp",
         "image_path": "/images/projects/nft-minting-dapp.svg",
         "description": "I built an NFT minting dapp where users can mint NFTs from the Johnny collection on the Rinkeby Testnet Ethereum Blockchain.",
